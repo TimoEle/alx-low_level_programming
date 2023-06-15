@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - Entry point
  *
  * Description: Using wite to output a message
  *
- * Return: 1 on success
+ * Return: 1  on success
  */
 int main(void)
 {
