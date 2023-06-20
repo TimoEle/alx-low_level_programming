@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - Entry point
+ * _isalpha - Entry point
  *
  * Description: Checks for alphabetic character
  * @c: Is an integer
