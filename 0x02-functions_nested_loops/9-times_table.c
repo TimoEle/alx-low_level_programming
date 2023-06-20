@@ -26,15 +26,15 @@ void times_table(void)
 			{
 				_putchar((mult / 10) + '0');
 				_putchar((mult % 10) + '0');
+			
+				if (num2 == 9)
+					continue;
+				_putchar(',');
+				_putchar(' ');
+				if (mult > 9)
+					continue;
+				_putchar(' ');
 			}
-
-			if (num2 == 9)
-				continue;
-			_putchar(',');
-			_putchar(' ');
-			if (mult > 9)
-				continue;
-			_putchar(' ');
 		}
 		_putchar('\n');
 	}
