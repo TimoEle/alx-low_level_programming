@@ -3,13 +3,13 @@
 /**
  * _islower - Entry point
  *
- * Description: Checks if a number is lower case or not
+ * Description: Checks for alphabetic character
  * @c: Is an integer
  *
- * Return: 1 if the number is lowercase and 0 if it is not
+ * Return: 1 if the number is an alphabetic character and 0 if it is not
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 	if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
 	{
