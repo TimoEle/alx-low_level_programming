@@ -21,18 +21,19 @@ void times_table(void)
 			if (mult < 10)
 			{
 				_putchar(mult + '0');
+				if (num2 == 9)
+					continue;
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' '):
 			}
 			else
 			{
 				_putchar((mult / 10) + '0');
 				_putchar((mult % 10) + '0');
-			
 				if (num2 == 9)
 					continue;
 				_putchar(',');
-				_putchar(' ');
-				if (mult > 9)
-					continue;
 				_putchar(' ');
 			}
 		}
