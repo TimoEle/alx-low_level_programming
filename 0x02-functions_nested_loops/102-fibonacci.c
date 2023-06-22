@@ -11,8 +11,8 @@ int main(void)
 {
 	int i, n;
 
-	long unsigned int fib1, fib2, fib_next;
-	
+	unsigned long int fib1, fib2, fib_next;
+
 	n = 50;
 
 	fib1 = 1;
