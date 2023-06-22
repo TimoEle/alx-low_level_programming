@@ -10,21 +10,19 @@
 
 void more_numbers(void)
 {
-	int i, num;
+	int i, num, digt1, digt2;
 
-	for (i = 0; i < 10; i++)
+	for (i = 1; i <= 10; i++)
 	{
-		for (num = 0; num < 15; num++)
+		for (num = 0; num <= 14; num++)
 		{
-			if (num > 9)
+			if (num >= 10)
 			{
-				_putchar((num / 10) + '0');
-				_putchar((num % 10) + '0');
+				digt1 = num / 10;
+				_putchar(digt1 + '0');
 			}
-			else
-			{
-				_putchar(num + '0');
-			}
+			digt2 = num % 10;
+			_putchar(digt2 + '0');
 		}
 		_putchar('\n');
 	}
