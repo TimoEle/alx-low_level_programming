@@ -4,6 +4,7 @@
  * print_diagonal - Entry point
  *
  * Description: Draws a diagona line on the terminal
+ * @n: Is an integer
  *
  * Return: Void
  */
