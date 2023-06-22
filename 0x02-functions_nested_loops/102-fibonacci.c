@@ -9,22 +9,23 @@
  */
 int main(void)
 {
-	int i, n, fib1, fib2;
+	int i, n;
 
-	unsigned int fib_next;
-
+	long unsigned int fib1, fib2, fib_next;
+	
 	n = 50;
+
 	fib1 = 1;
 	fib2 = 2;
 
-	printf("%d, ", fib1);
-	printf("%d, ", fib2);
+	printf("%lu, ", fib1);
+	printf("%lu, ", fib2);
 
 	for (i = 3; i <= n; i++)
 	{
 		fib_next = fib1 + fib2;
 
-		printf("%u", fib_next);
+		printf("%lu", fib_next);
 
 		if (i == 50)
 			continue;
