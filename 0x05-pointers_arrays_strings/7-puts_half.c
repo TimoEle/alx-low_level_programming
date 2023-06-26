@@ -24,8 +24,8 @@ void puts_half(char *str)
 
 	if (indx % 2 == 1)
 		half++;
-	
-	while(half < indx)
+
+	while  (half < indx)
 	{
 		_putchar(str[half]);
 		half++;
