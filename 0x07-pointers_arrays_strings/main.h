@@ -1,6 +1,8 @@
 #ifndef  MAIN_H
 #define MAIN_H
 
+#include <stdio.h>
+
 void simple_print_buffer(char *buffer, unsigned int size);
 
 char *_memset(char *s, char b, unsigned int n);
@@ -18,4 +20,6 @@ char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 
 int _putchar(char c);
+
+void print_diagsums(int *a, int size);
 #endif /*MAIN_H*/
