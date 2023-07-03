@@ -22,7 +22,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		while (*s1)
 		{
-			for (s2 = needle; *s2 && *s1 == *s2; s2++)
+			for (s2 = needle; (*s2 && *s1 == *s2 && *s2 != '\0'); s2++)
 			{
 				return (s1);
 			}
