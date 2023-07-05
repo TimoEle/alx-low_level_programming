@@ -11,8 +11,8 @@ int helper(int n, int start, int end)
 {
 	if (start <= end)
 	{
-		int mid = start + (end - start) / 2;
-		int mid_square = mid * mid;
+		long int mid = start + (end - start) / 2;
+		long int mid_square = mid * mid;
 	
 		if (mid_square == n)
 		{
