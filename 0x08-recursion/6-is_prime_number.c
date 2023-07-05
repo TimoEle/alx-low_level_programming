@@ -12,7 +12,7 @@
 
 int prime_recursive(int n, int divisor)
 {
-	
+
 	if (n <= 1)
 	{
 		return (0);
