@@ -9,27 +9,27 @@
  */
 int helper(int n, int start, int end)
 {
-	int mid = start + (end - start) / 2;
-
-	if (start > end)
+	if (start <= end)
 	{
-		return (-1);
+		int mid = start + (end - start) / 2;
+		int mid_square = mid * mid;
+	
+		if (mid_square == n)
+		{
+			return (mid);
+		}	
+		else if (mid_square < n)
+		{
+			return (helper(n, mid + 1, end));
+		}
+		else
+		{
+			return (helper(n, start, mid - 1));
+		}
 	}
 
-	if (mid * mid == n)
-	{
-		return (mid);
-	}
-	else if (mid * mid > n)
-	{
-		return (helper(n, start, mid - 1));
-	}
-	else
-	{
-		return (helper(n, mid + 1, end));
-	}
+	return (-1);
 }
-
 /**
  * _sqrt_recursion - Entry point
  *
