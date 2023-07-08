@@ -49,14 +49,17 @@ int main(int argc, char *argv[])
 	int cents = atoi(argv[1]);
 	int min_coins = calc_min_coins(cents);
 
-	if (argc != 2)
+	if (argc == 2)
+	{
+		printf("%d\n", min_coins);
+
+		return (0);
+	}
+	else
 	{
 		printf("Error\n");
 
 		return (1);
 	}
 
-	printf("%d\n", min_coins);
-
-	return (0);
 }
