@@ -13,7 +13,7 @@
 
 void print_dog(struct dog *d)
 {
-	if (d == NULL)
+	if (!d)
 		return;
 
 	printf("Name: %s\n", d->name != NULL ? d->name : "(nil)");
