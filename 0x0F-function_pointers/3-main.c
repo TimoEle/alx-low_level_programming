@@ -10,7 +10,7 @@
  * Return: 0 on Success, 98, 99 or 100 on fail
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	int num1, num2, result;
 	int (*operation)(int, int);
